@@ -17,8 +17,8 @@ public class GuyBall : MonoBehaviour
     {
         timeForMinigame -= Time.deltaTime;
 
-        if (rb.velocity.magnitude > maxSpeed)
-            rb.velocity = rb.velocity.normalized * maxSpeed;
+        if (rb.linearVelocity.magnitude > maxSpeed)
+            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
 
         else if (timeForMinigame <= 0)
         {
